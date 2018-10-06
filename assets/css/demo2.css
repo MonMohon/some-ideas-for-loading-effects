@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.loading-holder {
+  background: #f2709c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9472, #f2709c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  display: block;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.loading-holder .loading .text-wrapper {
+  position: absolute;
+  display: block;
+  padding-top: 0.6em;
+  padding-left: 0.15em;
+  padding-right: 0.05em;
+  padding-bottom: 0.6em;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  overflow: hidden;
+}
+
+.loading-holder .loading .text-wrapper .letter {
+  font-family: 'Ultra', serif;
+  display: inline-block;
+  color: #f6f6f6;
+  font-size: 3.6em;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+}
+
+@media only screen and (max-width: 640px)  {
+
+  .loading-holder .loading .text-wrapper {
+    padding-top: 0.3em;
+    padding-left: 0.15em;
+    padding-right: 0.05em;
+    padding-bottom: 0.3em;
+  }
+
+  .loading-holder .loading .text-wrapper .letter {
+    font-size: 1.8em;
+  }
+  
+}
+
+@media only screen and (max-width: 360px)  {
+  
+  .loading-holder .loading .text-wrapper .letter {
+    font-size: 1.4em;
+  }
+  
+}

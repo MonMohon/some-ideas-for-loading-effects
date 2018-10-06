@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.loading-holder {
+  background: #5f2c82;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  display: block;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.loading-holder .loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #fff;
+  width: 3em;
+  height: 3em;
+}
+
+.loading-holder .loading .bang {
+  font-size: 1.4em;
+  top: auto;
+  left: -0.06em;
+}
+
+.loading-holder .loading .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.loading-holder .loading .circle-big {
+  width: 3em;
+  height: 3em;
+  background: #5f2c82;  /* fallback for old browsers */
+  background: -webkit-radial-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 2em;
+  opacity: 0.5;
+}
+
+.loading-holder .loading .circle-light {
+  width: 2em;
+  height: 2em;
+  background-color: #e8ecf1;
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.loading-holder .loading .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  /* border: 2px dashed #f6f6f6; */
+  width: 2.4em;
+  height: 2.4em;
+    background-image: linear-gradient(to bottom, #49a09d 0%, #5f2c82 60%);
+    opacity: 0.25;
+}
